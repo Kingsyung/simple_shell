@@ -14,8 +14,8 @@ void initializeInfo(info_t *info)
 
 /**
  * setupInfo - initializes info_t struct
- * @info: struct address
- * @av: argument vector
+ * @info: struct addresses
+ * @av: argument vectors
  */
 void setupInfo(info_t *info, char **av)
 {
