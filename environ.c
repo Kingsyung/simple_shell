@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * myEnv - prints the current environment
+ * myEnv - prints d current environment
  * @shellInfo: Structure containing potential arguments. Used to maintain
  * constant function prototype.
  * Return: Always 0
