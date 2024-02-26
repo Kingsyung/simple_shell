@@ -104,5 +104,3 @@ int myHelp(ShellInfo *shellInfo)
 		_puts(*argArray); /* temp att_unused workaround */
 	return (0);
 }
-
-
