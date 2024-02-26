@@ -10,24 +10,25 @@
 
 char *strncpy(char *destination, char *source, int n)
 {
-    int x;
-    char *result = destination;
-    x = 0;
+	int x;
+	char *result = destination;
 
-    while (source[x] != '\0' && x < n - 1)
-    {
-        destination[x] = source[x];
-        x++;
-    }
-    if (x < n)
-    {
-        while (x < n)
-        {
-            destination[x] = '\0';
-            x++;
-        }
-    }
-    return result;
+	x = 0;
+
+	while (source[x] != '\0' && x < n - 1)
+	{
+		destination[x] = source[x];
+		x++;
+	}
+	if (x < n)
+	{
+		while (x < n)
+		{
+			destination[x] = '\0';
+			x++;
+		}
+	}
+	return (result);
 }
 
 /**
@@ -40,22 +41,23 @@ char *strncpy(char *destination, char *source, int n)
 
 char *strncat(char *destination, char *source, int n)
 {
-    int x, y;
-    char *result = destination;
-    x = 0;
-    y = 0;
+	int x, y;
+	char *result = destination;
 
-    while (destination[x] != '\0')
-        x++;
-    while (source[y] != '\0' && y < n)
-    {
-        destination[x] = source[y];
-        x++;
-        y++;
-    }
-    if (y < n)
-        destination[x] = '\0';
-    return result;
+	x = 0;
+	y = 0;
+
+	while (destination[x] != '\0')
+		x++;
+	while (source[y] != '\0' && y < n)
+	{
+		destination[x] = source[y];
+		x++;
+		y++;
+	}
+	if (y < n)
+		destination[x] = '\0';
+	return (result);
 }
 
 /**
@@ -68,10 +70,9 @@ char *strncat(char *destination, char *source, int n)
 
 char *strchr(char *string, char character)
 {
-    do
-    {
-        if (*string == character)
-            return string;
-    } while (*string++ != '\0');
-    return NULL;
+	do {
+		if (*string == character)
+			return (string);
+	} while (*string++ != '\0');
+	return (NULL);
 }
