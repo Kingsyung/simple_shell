@@ -18,7 +18,7 @@ char **obtainEnvironment(info_t *info)
 }
 
 /**
- * removeEnvironmentVariable - Remove an environment variable
+ * removeEnvironmentVariable - Removes environment variables
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  * @variable: the string environment variable property
