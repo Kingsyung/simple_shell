@@ -9,6 +9,7 @@
 size_t listLen(const list_t *h)
 {
 	size_t x = 0;
+
 	while (h)
 	{
 		h = h->next;
@@ -87,6 +88,7 @@ size_t printList(const list_t *h)
 list_t *nodeStartsWith(list_t *node, char *prefix, char c)
 {
 	char *p = NULL;
+
 	while (node)
 	{
 		p = startsWith(node->str, prefix);
