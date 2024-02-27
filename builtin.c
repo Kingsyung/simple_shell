@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * myExit - exits the shell
- * @shellInfo: Structure containing potential arguments. Used to maintain
+ * myExit - exits the shell.
+ * @shellInfo: Structure containing potential arguments. Used to maintain.
  * constant function prototype.
- * Return: exits with a given exit status
- * (0) if shellInfo->argv[0] != "exit"
+ * Return: exits with a given exit status.
+ * (0) if shellInfo->argv[0] != "exit".
  */
 
 int myExit(ShellInfo *shellInfo)
@@ -32,7 +32,7 @@ int myExit(ShellInfo *shellInfo)
 }
 
 /**
- * myCd - changes the current directory of the process
+ * myCd - changes the current directory of the process.
  * @shellInfo: Structure containing potential arguments. Used to maintain
  * constant function prototype.
  * Return: Always 0
@@ -87,7 +87,7 @@ int myCd(ShellInfo *shellInfo)
 }
 
 /**
- * myHelp - changes the current directory of the process
+ * myHelp - changes the current directory of the process.
  * @shellInfo: Structure containing potential arguments. Used to maintain
  * constant function prototype.
  * Return: Always 0
