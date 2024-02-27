@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
-* isInteractive - returns true if shell is in interactive mode
-* @shellInfo: struct address
-* Return: 1 if interactive mode, 0 otherwise
+* isInteractive - returns true if shell is in interactive mode.
+* @shellInfo: struct address.
+* Return: 1 if interactive mode, 0 otherwise.
 */
 
 int isInteractive(info_t *shellInfo)
@@ -12,10 +12,10 @@ int isInteractive(info_t *shellInfo)
 }
 
 /**
- * isDelimiter - checks if character is a delimiter
- * @c: the char to check
- * @delim: the delimiter string
- * Return: 1 if true, 0 if false
+ * isDelimiter - checks if character is a delimiter.
+ * @c: the char to check.
+ * @delim: the delimiter string.
+ * Return: 1 if true, 0 if false.
  */
 
 int isDelimiter(char c, char *delim)
@@ -72,5 +72,3 @@ int customAtoi(char *s)
 		output = result;
 	return (output);
 }
-
-
