@@ -52,9 +52,9 @@ typedef struct liststr
 /**
  * struct passinfo - contains pseudo-arguements to pass into a function,
  * allowing uniform prototype for function pointer struct
- * @arg: a string generated from getline containing arguements
- * @argv:an array of strings generated from arg
- * @path: a string path for the current command
+ * @arg: string generated from getline containing arguements
+ * @argv: array of strings generated from arg
+ * @path: string path for the current command
  * @argc: the argument count
 * @line_count: the error count
  * @err_num: the error code for exit()s
