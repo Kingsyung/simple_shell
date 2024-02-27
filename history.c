@@ -113,6 +113,7 @@ int readHistory(info_t *info)
 int buildHistoryList(info_t *info, char *buf, int y)
 {
 	list_t *node = NULL;
+
 	if (info->history)
 		node = info->history;
 	addNodeEnd(&node, buf, y);
