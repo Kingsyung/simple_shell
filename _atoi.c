@@ -1,14 +1,13 @@
 #include "shell.h"
 
 /**
-* isInteractive - returns true if shell is in interactive mode.
-* @shellInfo: struct address.
-* Return: 1 if interactive mode, 0 otherwise.
-*/
-
+ * isInteractive - returns true if shell is in interactive mode
+ * @shellInfo: struct address
+ * Return: 1 if interactive mode, 0 otherwise
+ */
 int isInteractive(info_t *shellInfo)
 {
-	return (isatty(STDIN_FILENO) && shellInfo->readFileDescriptor <= 2);
+	return (isatty(STDIN_FILENO) && shellInfo->readfd <= 2);
 }
 
 /**
