@@ -12,6 +12,36 @@
 #include <fcntl.h>
 #include <errno.h>
 
+/* Definition of ListNode */
+typedef struct ListNode {
+    char *str;
+    struct ListNode *next;
+} ListNode;
+
+/* Definition of ShellInfo */
+typedef struct ShellInfo {
+    /* Add fields as needed */
+    char *arg;
+    char **argv;
+    char *path;
+    int argc;
+    unsigned int line_count;
+    int err_num;
+    int linecount_flag;
+    char *fname;
+    ListNode *env;
+    ListNode *history;
+    ListNode *alias;
+    char **environ;
+    int env_changed;
+    int status;
+    char **cmd_buf;
+    int cmd_buf_type;
+    int readfd;
+    int histcount;
+} ShellInfo;
+
+
 /* for read/write buffers */
 #define READ_BUF_SIZE 1024
 #define WRITE_BUF_SIZE 1024
